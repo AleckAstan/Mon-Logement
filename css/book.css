@@ -1,0 +1,19 @@
+.book-calendar {
+  flex: 2;
+  /* position: relative; */
+}
+.book-details {
+  padding: 0 2rem;
+}
+.book-details input {
+  outline: none;
+  padding: 1vw;
+  font-weight: 600;
+  text-align: center;
+}
+.book-body {
+  margin: 2.5rem 0;
+}
+.book-title {
+  margin-bottom: 1rem;
+}

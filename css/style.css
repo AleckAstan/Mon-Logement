@@ -1,0 +1,56 @@
+@import url(base.css);
+@import url(variable.css);
+@import url(components.css);
+@import url(responsive.css);
+@import url(footer.css);
+@import url(home.css);
+@import url(best.css);
+@import url(modal.css);
+@import url(mdb.css);
+@import url(book.css);
+@import url(gallery.css);
+html {
+  scroll-behavior: smooth;
+}
+.nav-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5vw;
+  background: var(--dark);
+}
+#onepage-nav li a.scroll.active {
+  text-decoration: underline;
+}
+
+.section {
+  height: 100vh;
+  padding: 2rem 10rem;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+  .section {
+    padding: 1rem 3rem;
+  }
+  .home-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .best-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .book-body {
+    flex-direction: column;
+  }
+  .gallery-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .modal-logement-details {
+    flex-direction: column;
+  }
+  .footer .footerSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,69 @@
+.best-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70%;
+  margin-bottom: 1rem;
+}
+.best-card .best-logement img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.best-logement {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
+}
+.best-logement figcaption {
+  background: #fbf4d5be;
+  /* background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.103),
+    rgba(255, 255, 255, 0.795)
+  ); */
+  padding: 1rem;
+  color: var(--dark);
+  height: 90%;
+  left: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 100%;
+  -webkit-transition: bottom 0.35s;
+  transition: bottom 0.35s;
+  backdrop-filter: blur(10px);
+}
+.best-logement:hover figcaption,
+.best-logement.hover figcaption {
+  bottom: 10%;
+}
+.best-logement:hover > img,
+.best-logement.hover > img {
+  /* opacity: 0.4; */
+  /* filter: blur(5px); */
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.caption-description {
+  text-align: center;
+}
+.caption-top button {
+  width: 80%;
+  outline: none;
+  height: 70%;
+}
+.caption-description {
+  flex: 9;
+}
+.best-card {
+  margin: 1rem;
+}
+
+.caption-top .hr {
+  margin: 0;
+  margin-bottom: 1rem;
+}

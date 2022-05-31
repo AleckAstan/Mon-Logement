@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.debug {
+  border: solid 1px red;
+}
+body {
+  font-size: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.align-center {
+  align-items: center;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.h-100 {
+  height: 100%;
+}
+.h-50 {
+  height: 50%;
+}
+.hr {
+  width: 100%;
+  height: 1px;
+  background: var(--dark);
+  margin: 1rem 0;
+}
+.vr {
+  width: 10px;
+  height: 100%;
+  background: var(--dark);
+}
+.shadow {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-button {
+  height: 30px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+  background-color: rgb(190, 190, 190);
+}
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+/*************FOOTER*****************/
+
+.footer {
+  margin: 0;
+  background: var(--dark);
+  height: 100%;
+  padding: 1rem;
+}
+
+.footer .footerSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footerSection > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .footerSection > div h3 {
+  color: var(--white);
+}
+
+.footer .footerSection .about .infos > p {
+  color: var(--white);
+}
+
+.contactLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactLink > a {
+  color: var(--white);
+  margin: 0.5rem;
+}
+
+.contactLink a > i {
+  color: var(--white);
+  margin: 0 1rem;
+}
+
+.newsletter div {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsletter div .input {
+  width: 14rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--white);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.newsletter div .btn {
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.newsletter div .btn:hover {
+  background: var(--white);
+  color: var(--dark);
+}

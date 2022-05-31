@@ -1,0 +1,25 @@
+button {
+  cursor: pointer;
+}
+.butn {
+  padding: 1vw;
+  font-size: 100%;
+  min-width: 15vw;
+  min-height: 3vw;
+  border: none;
+  margin: 0.5rem;
+}
+.btn-s {
+  padding: 0.5vw;
+  font-size: 80%;
+  min-width: 10vw;
+  border: none;
+}
+.btn-primary {
+  background-color: var(--light-1);
+  color: var(--dark);
+}
+.btn-secondary {
+  background-color: var(--primary-2);
+  color: var(--light-1);
+}
