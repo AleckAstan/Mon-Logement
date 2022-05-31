@@ -31,12 +31,15 @@
 .top-left {
   position: fixed;
   right: 3rem;
-  background: var(--primary-3);
+  background: var(--primary-2);
   padding: 1.6rem 0.8rem;
 }
 #language {
   outline: none;
   border: none;
-  background: var(--primary-3);
+  background: var(--primary-2);
   color: var(--light-1);
+}
+.home-title {
+  font-size: 5rem;
 }

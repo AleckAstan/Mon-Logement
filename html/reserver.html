@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- FONT END -->
+
+  <!-- MDB  -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <!-- MDB END  -->
+
+  <link rel="stylesheet" href="/css/hotel-datepicker.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/logement.css">
+  <link rel="stylesheet" href="/css/reserver.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="/css/nav.css">
+  <title>Reserver</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+
+      <div class="logo-details">
+        <h2 class="logo">.ML</h2>
+        <div class="logo_name">Mon Logement</div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="fas fa-bars" id="btn"></i>
+        </li>
+        <li>
+          <a href="/#home">
+            <i class="fas fa-house"></i>
+            <span class="links_name">Accueil</span>
+          </a>
+          <span class="tooltip">Accueil</span>
+        </li>
+        <li>
+          <a href="/#best">
+            <i class="fas fa-list"></i>
+            <span class="links_name">Logements</span>
+          </a>
+          <span class="tooltip">Logements</span>
+        </li>
+        <li>
+          <a href="/#book">
+            <i class="fas fa-bookmark"></i>
+            <span class="links_name">Reserver</span>
+          </a>
+          <span class="tooltip">Reserver</span>
+        </li>
+        <li>
+          <a href="/#gallery">
+            <i class="fa-solid fa-images"></i>
+            <span class="links_name">Gallery</span>
+          </a>
+          <span class="tooltip">Gallery</span>
+        </li>
+        <li>
+          <a href="/#infos">
+            <i class="fas fa-info-circle"></i>
+            <span class="links_name">A-propos</span>
+          </a>
+          <span class="tooltip">A-propos</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <h2 class="logo">.ML</h2>
+            <div class="name_job">
+              <div class="name">Mon Logement</div>
+              <div class="job">Mon Logement</div>
+            </div>
+          </div>
+          <i class='bx bx-log-out' id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="top-left shadow">
+      <select name="language" id="language" class="language h-100">
+        <option value="fr">Français</option>
+        <option value="Ang">Anglais</option>
+      </select>
+    </div>
+    <div class="main ">
+
+      <div class="logement-header flex align-center justify-between">
+        <h1>Reserver</h1>
+
+      </div>
+      <div class="hr"></div>
+      <div class="form-container flex-row justify-center ">
+        <div class="form-reserve">
+          <h3 class="reserve-title-head text-center">Date de votre sejour</h3>
+          <div class="date-picker-container">
+            <input type="text" id="date-picker-2" value="" hidden>
+          </div>
+          <div class="formulaire flex-row">
+            <div class="formulaire-left flex-1 flex-column shadow">
+              <h3 class="reserve-title">Vos informations</h3>
+              <div class="hr"></div>
+              <form action="#" class="formulaire-input flex-column justify-center">
+                <label for="input-nom">Nom</label>
+                <input type="text" id="input-nom" class="input-i">
+                <label for="input-prenom">Prénom</label>
+                <input type="text" id="input-prenom" class="input-i">
+                <label for="input-tel">Téléphone</label>
+                <input type="tel" id="input-tel" class="input-i">
+                <label for="input-add">Adresse</label>
+                <input type="text" id="input-add" class="input-i">
+                <label for="input-mail">E-Mail</label>
+                <input type="email" id="input-mail" class="input-i">
+                <label for="input-nbrp">Nombre de personne</label>
+                <input type="number" min="1" max="10" id="input-nbrp" class="input-i">
+                <label for="input-henter">Heure d'entrée</label>
+                <input type="time" id="input-henter" class="input-i">
+                <label for="input-hsort">Heure de Sortie</label>
+                <input type="time" id="input-henter" class="input-i">
+                <fieldset>
+                  <legend>Etranger</legend>
+                  <label for="input-datearr">Date d'arrivée</label>
+                  <input type="date" id="input-datearr" class="input-i">
+
+                  <label for="input-transp">Transport</label>
+                  <select name="transport" id="input-hsort">Ivato/Logement
+                    <option value="AT">Avec transport Allée</option>
+                    <option value="ST">Sans transport</option>
+                    <option value="AR">Avec transport Allée et Retour</option>
+                  </select>
+                </fieldset>
+              </form>
+            </div>
+            <div class="formulaire-right flex-column flex-1 shadow">
+              <h3 class="reserve-title">Votre réservation</h3>
+              <div class="hr"></div>
+              <table class="reserve-table">
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Date d'arrivé</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-datea"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Date de depart</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-dated"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nom</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nom" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Prénom</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-prenom" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Téléphone</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-tel" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Adresse</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-add" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>E-Mail</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-mail" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nombre de personne</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nbrp" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nombre de personne</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nbrp" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nombre de personne</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nbrp" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nombre de personne</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nbrp" class="value-v"> </p>
+                  </td>
+                </tr>
+                <tr class="reserve-row">
+                  <td class="reserve-column">
+                    <p>Nombre de personne</p>
+                  </td>
+                  <td class="reserve-column">
+                    <p id="value-nbrp" class="value-v"> </p>
+                  </td>
+                </tr>
+              </table>
+              <div class="best-footer flex-row justify-center debug">
+
+                <a href="./html/disponible.html"><button class="butn btn-secondary shadow"
+                    id="btn-book">Valider</button></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="footer" id="infos">
+      <div class="footerSection">
+        <div class="about">
+          <h3>A propos de nous</h3>
+          <div class="infos">
+            <p data-aos="fade-right">Mon Logement</p>
+            <p data-aos="fade-right">Adress</p>
+          </div>
+        </div>
+        <div class="contactUs">
+          <h3>Nous contacter</h3>
+          <div class="contactLink">
+            <a href="https://web.facebook.com/profile.php?id=100010717230867" data-aos="fade-right"><i
+                class="fab fa-facebook-f"></i>Mon Logement</a>
+            <a href="https://www.instagram.com/p/CRUYgcdMjSd/" data-aos="fade-right"><i class="fab fa-instagram"></i>Mon
+              Logement</a>
+            <a href="" data-aos="fade-right"><i class="fas fa-paper-plane"></i>email.email@email.com</a>
+
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Mon Logement</h3>
+          <h1 class="footer-logo">.ML</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- JQUERY END  -->
+    <!-- MDB  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <!-- MDB END  -->
+    <script src="/js/fecha.min.js"></script>
+    <script src="/js/hotel-datepicker.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/nav.js"></script>
+    <!-- DATEPICKER  -->
+
+    <script>
+      (function () {
+        var datea = document.getElementById('value-datea');
+        var dated = document.getElementById('value-dated');
+        var input = document.getElementById('date-picker-2');
+        var datepicker2 = new HotelDatepicker(input, {
+          format: 'D MMMM YYYY',
+          disabledDates: [
+            '2022-06-01',
+            '2022-06-02',
+            '2022-06-03',
+            '2022-06-04',
+            '2022-06-05',
+            '2022-06-06',
+            '2022-06-07',
+            '2022-06-08',
+            '2022-06-09',
+            '2022-06-10',
+          ],
+          onSelectRange: function () {
+            console.log("selected dates", input.value);
+            const dates = input.value.split(' - ');
+            datea.innerHTML = dates[0];
+            dated.innerHTML = dates[1];
+          },
+          showTopbar: false,
+          moveBothMonths: true
+        });
+        datepicker2.open();
+      })();
+    </script>
+    <!-- DATEPICKER END -->
+    <script src="/js/calendar-height-bug.js"></script>
+    <script src="/js/whiletyping.js"></script>
+</body>
+
+</html>

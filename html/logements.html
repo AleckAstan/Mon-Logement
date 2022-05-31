@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- FONT END -->
+
+  <!-- MDB  -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="/css/mdb.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <!-- MDB END  -->
+
+  <link rel="stylesheet" href="/css/hotel-datepicker.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/carousel.css">
+  <link rel="stylesheet" href="/css/caption.css">
+  <link rel="stylesheet" href="/css/logement.css">
+
+  <title>Logement Disponible</title>
+</head>
+
+<body>
+  <div class="container debug">
+    <div class="sidebar">
+
+      <div class="logo-details">
+        <h2 class="logo">.ML</h2>
+        <div class="logo_name">Mon Logement</div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="fas fa-bars" id="btn"></i>
+        </li>
+        <li>
+          <a href="/#home">
+            <i class="fas fa-house"></i>
+            <span class="links_name">Accueil</span>
+          </a>
+          <span class="tooltip">Accueil</span>
+        </li>
+        <li>
+          <a href="/#best">
+            <i class="fas fa-list"></i>
+            <span class="links_name">Logements</span>
+          </a>
+          <span class="tooltip">Logements</span>
+        </li>
+        <li>
+          <a href="/#book">
+            <i class="fas fa-bookmark"></i>
+            <span class="links_name">Reserver</span>
+          </a>
+          <span class="tooltip">Reserver</span>
+        </li>
+        <li>
+          <a href="/#gallery">
+            <i class="fa-solid fa-images"></i>
+            <span class="links_name">Gallery</span>
+          </a>
+          <span class="tooltip">Gallery</span>
+        </li>
+        <li>
+          <a href="/#infos">
+            <i class="fas fa-info-circle"></i>
+            <span class="links_name">A-propos</span>
+          </a>
+          <span class="tooltip">A-propos</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <h2 class="logo">.ML</h2>
+            <div class="name_job">
+              <div class="name">Mon Logement</div>
+              <div class="job">Mon Logement</div>
+            </div>
+          </div>
+          <i class='bx bx-log-out' id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="top-left shadow">
+      <select name="language" id="language" class="language h-100">
+        <option value="fr">Français</option>
+        <option value="Ang">Anglais</option>
+      </select>
+    </div>
+    <div class="main debug">
+
+      <div class="logement-header debug flex align-center justify-between">
+        <h1>Tout nos logements</h1>
+      </div>
+      <div class="hr"></div>
+      <div class="logement-list debug ">
+        <div class="logement btn-voir flex-row shadow">
+          <div class="carousel-logement-container">
+            <img src="/assets/images/bg-home.jpg" alt="logement photo" class="logement-img w-100 h-100">
+          </div>
+          <div class="logement-details flex-column justify-between">
+            <div class="logement-details-top">
+              <ul class="logement-details-name">
+                <li class="logement-detail">Nombre de personne</li>
+                <li class="logement-detail">Dimensions</li>
+              </ul>
+              <ul class="logement-details-description">
+                <li class="logement-detail">4</li>
+                <li class="logement-detail">6m*5m</li>
+              </ul>
+            </div>
+            <div class="logement-details-bottom flex-row justify-between ">
+              <div class="logement-details-prix">
+                <p>200.000MGA/Jour</p>
+              </div>
+              <button class="button-s butn btn-voir btn-primary">Voir Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="logement btn-voir flex-row shadow">
+          <div class="carousel-logement-container">
+            <img src="/assets/images/bg-home.jpg" alt="logement photo" class="logement-img w-100 h-100">
+          </div>
+          <div class="logement-details flex-column justify-between">
+            <div class="logement-details-top">
+              <ul class="logement-details-name">
+                <li class="logement-detail">Nombre de personne</li>
+                <li class="logement-detail">Dimensions</li>
+              </ul>
+              <ul class="logement-details-description">
+                <li class="logement-detail">4</li>
+                <li class="logement-detail">6m*5m</li>
+              </ul>
+            </div>
+            <div class="logement-details-bottom flex-row justify-between ">
+              <div class="logement-details-prix">
+                <p>200.000MGA/Jour</p>
+              </div>
+              <button class="button-s butn btn-voir btn-primary">Voir Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="logement debug btn-voir flex-row shadow">
+          <div class="carousel-logement-container">
+            <img src="/assets/images/bg-home.jpg" alt="logement photo" class="logement-img w-100 h-100">
+          </div>
+          <div class="logement-details flex-column justify-between">
+            <div class="logement-details-top">
+              <ul class="logement-details-name">
+                <li class="logement-detail">Nombre de personne</li>
+                <li class="logement-detail">Dimensions</li>
+              </ul>
+              <ul class="logement-details-description">
+                <li class="logement-detail">4</li>
+                <li class="logement-detail">6m*5m</li>
+              </ul>
+            </div>
+            <div class="logement-details-bottom flex-row justify-between ">
+              <div class="logement-details-prix">
+                <p>200.000MGA/Jour</p>
+              </div>
+              <button class="button-s butn btn-voir btn-primary">Voir Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="logement btn-voir flex-row shadow">
+          <div class="carousel-logement-container">
+            <img src="/assets/images/bg-home.jpg" alt="logement photo" class="logement-img w-100 h-100">
+          </div>
+          <div class="logement-details flex-column justify-between">
+            <div class="logement-details-top">
+              <ul class="logement-details-name">
+                <li class="logement-detail">Nombre de personne</li>
+                <li class="logement-detail">Dimensions</li>
+              </ul>
+              <ul class="logement-details-description">
+                <li class="logement-detail">4</li>
+                <li class="logement-detail">6m*5m</li>
+              </ul>
+            </div>
+            <div class="logement-details-bottom flex-row justify-between ">
+              <div class="logement-details-prix">
+                <p>200.000MGA/Jour</p>
+              </div>
+              <button class="button-s butn btn-voir btn-primary">Voir Details</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <!-- MODAL -->
+      <!-- The Modal -->
+      <div id="details-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Details</h2>
+          </div>
+          <div class="modal-body debug">
+            <!-- IMAGE GALLERY  -->
+            <h2 class="text-center debug">Rez de chaussez</h2>
+            <div class="hr"></div>
+            <div class="modal-logement-details flex-row debug">
+              <div class="carousel-container debug flex-1">
+                <div id="carouselMDExample" class="carousel slide debug carousel-fade" data-mdb-ride="carousel">
+                  <!-- Slides -->
+                  <div class="carousel-inner mb-5 debug shadow-1-strong rounded-3">
+                    <div class="carousel-item active">
+                      <img src="/assets/images/bg-home.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/bg-home.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/bg-home.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                  </div>
+                  <!-- Slides -->
+
+                  <!-- Controls -->
+                  <button class="carousel-control-prev debug" type="button" data-mdb-target="#carouselMDExample"
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden debug">Previous</span>
+                  </button>
+                  <button class="carousel-control-next debug" type="button" data-mdb-target="#carouselMDExample"
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden debug">Next</span>
+                  </button>
+                  <!-- Controls -->
+
+                  <!-- Thumbnails -->
+                  <div class="carousel-indicators debug" style="margin-bottom: -20px;">
+                    <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1" style="width: 100px;">
+                      <img class="d-block w-100 shadow-1-strong rounded" src="/assets/images/bg-home.jpg"
+                        class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="1"
+                      aria-label="Slide 2" style="width: 100px;">
+                      <img class="d-block w-100 shadow-1-strong rounded" src="/assets/images/bg-home.jpg"
+                        class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="2"
+                      aria-label="Slide 3" style="width: 100px;">
+                      <img class="d-block w-100 shadow-1-strong rounded" src="/assets/images/bg-home.jpg"
+                        class="img-fluid" />
+                    </button>
+                  </div>
+                  <!-- Thumbnails -->
+                </div>
+                <div class="hr"></div>
+                <p class="details-texte debug">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Atque
+                  nihil
+                  commodi
+                  doloribus perferendis et molestiae nemo placeat saepe ut? Quidem, aliquid voluptatem!
+                  Pariatur facilis,
+                  aut ad dolor ea inventore consequatur tempore, voluptatem modi alias earum perspiciatis
+                  corrupti,
+                  voluptatum iusto consequuntur beatae. Assumenda nulla saepe nisi officiis facilis beatae
+                  necessitatibus
+                  quos.</p>
+              </div>
+              <!-- IMAGE GALLERY END  -->
+              <div class="one-logement-details debug flex-1">
+
+
+
+
+                <div class="details-resume flex-row w-100 debug justify-evenly">
+                  <div class="details-row details-left debug">
+                    <ul>
+                      <li>Tarif</li>
+                      <li>Nombre de personne</li>
+                      <li>Dimensions</li>
+                      <li>Equipements</li>
+                    </ul>
+                  </div>
+
+                  <div class="details-row details-right debug">
+                    <ul>
+                      <li>200.000MGA/Jour</li>
+                      <li>4</li>
+                      <li>8m*6m</li>
+                      <ul>
+                        <li>TV</li>
+                        <li>Douche</li>
+                        <li>TV</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+                <div class="hr"></div>
+                <h3 class="text-center debug">Disponibilitée</h3>
+                <div class="date-picker-container debug">
+                  <input type="text" id="date-picker-2" value="" hidden>
+                </div>
+                <div class="best-footer modal-footer flex-row justify-center debug">
+
+                  <a href="./reserver.html"><button class="butn btn-secondary shadow"
+                      id="btn-book">Reserver</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MODAL END -->
+    </div>
+    <section class="footer" id="infos">
+      <div class="footerSection">
+        <div class="about">
+          <h3>A propos de nous</h3>
+          <div class="infos">
+            <p data-aos="fade-right">Mon Logement</p>
+            <p data-aos="fade-right">Adress</p>
+          </div>
+        </div>
+        <div class="contactUs">
+          <h3>Nous contacter</h3>
+          <div class="contactLink">
+            <a href="https://web.facebook.com/profile.php?id=100010717230867" data-aos="fade-right"><i
+                class="fab fa-facebook-f"></i>Mon Logement</a>
+            <a href="https://www.instagram.com/p/CRUYgcdMjSd/" data-aos="fade-right"><i class="fab fa-instagram"></i>Mon
+              Logement</a>
+            <a href="" data-aos="fade-right"><i class="fas fa-paper-plane"></i>email.email@email.com</a>
+
+          </div>
+        </div>
+        <div class="newsletter">
+          <h3>Mon Logement</h3>
+          <h1 class="footer-logo">.ML</h1>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- JQUERY  -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- JQUERY END  -->
+  <!-- MDB  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+  <!-- MDB END  -->
+  <script src="/js/fecha.min.js"></script>
+  <script src="/js/hotel-datepicker.js"></script>
+  <script src="../js/modal.js"></script>
+
+  <!-- DATEPICKER  -->
+
+  <script>
+    (function () {
+      var input = document.getElementById('date-picker-2');
+      console.log("input", input);
+      var datepicker2 = new HotelDatepicker(input, {
+        disabledDates: [
+          '2022-06-01',
+          '2022-06-02',
+          '2022-06-03',
+          '2022-06-04',
+          '2022-06-05',
+          '2022-06-06',
+          '2022-06-07',
+          '2022-06-08',
+          '2022-06-09',
+          '2022-06-10',
+        ],
+        showTopbar: false,
+        moveBothMonths: true
+      });
+      datepicker2.open();
+    })();
+  </script>
+  <!-- DATEPICKER END -->
+  <script src="/js/calendar-height-bug.js"></script>
+</body>
+
+</html>

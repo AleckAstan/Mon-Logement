@@ -19,11 +19,11 @@
 }
 
 .footer .footerSection > div h3 {
-  color: var(--white);
+  color: var(--light-1);
 }
 
 .footer .footerSection .about .infos > p {
-  color: var(--white);
+  color: var(--light-1);
 }
 
 .contactLink {
@@ -33,12 +33,12 @@
 }
 
 .contactLink > a {
-  color: var(--white);
+  color: var(--light-1);
   margin: 0.5rem;
 }
 
 .contactLink a > i {
-  color: var(--white);
+  color: var(--light-1);
   margin: 0 1rem;
 }
 
@@ -51,7 +51,7 @@
   width: 14rem;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
-  border: solid 1px var(--white);
+  border: solid 1px var(--light-1);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   box-sizing: border-box;
@@ -66,6 +66,10 @@
 }
 
 .newsletter div .btn:hover {
-  background: var(--white);
+  background: var(--light-1);
   color: var(--dark);
+}
+.footer-logo {
+  font-size: 5rem;
+  color: var(--light-1);
 }

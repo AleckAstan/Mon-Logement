@@ -8,12 +8,13 @@ var modal = document.getElementById("details-modal");
 var span = document.getElementsByClassName("close")[0];
 
 const voirbtns = document.querySelectorAll(".btn-voir");
+console.log("voir buttons", voirbtns);
 
 for (let i = 0; i < voirbtns.length; i++) {
-	voirbtn = voirbtns[i];
-	voirbtn.onclick = function () {
-		modal.style.display = "block";
-	};
+  voirbtn = voirbtns[i];
+  voirbtn.onclick = function () {
+    modal.style.display = "block";
+  };
 }
 
 // When the user clicks the button, open the modal
@@ -23,12 +24,12 @@ for (let i = 0; i < voirbtns.length; i++) {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-	modal.style.display = "none";
+  modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
-	}
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 };

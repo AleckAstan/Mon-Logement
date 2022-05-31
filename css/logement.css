@@ -1,0 +1,55 @@
+@import './variable.css';
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+body { 
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+  margin:0;
+}
+h1{
+  margin-left: 1rem;
+}
+p{
+  margin: 1rem 0;
+}
+li{
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+ }
+.main{
+  padding: 2rem 10rem 2rem 10rem;
+}
+.logement{
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.carousel-logement-container{
+  flex: 1;
+
+}
+.carousel-logement-container img{
+  object-fit: cover;
+
+}
+.logement-details{
+  flex: 2;
+  padding:1rem 2rem;
+}
+
+.logement-details-prix{
+  font-weight: 700;
+  color: var(--primary-2);
+}
+.logement-details-bottom{
+  margin: 0;
+}

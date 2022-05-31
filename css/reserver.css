@@ -1,0 +1,69 @@
+@import "./variable.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+input,
+option,
+select {
+  outline: none;
+  padding: 0.5rem;
+}
+fieldset {
+  padding: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+}
+h1 {
+  margin-left: 1rem;
+}
+p {
+  margin: 1rem 0;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.form-container {
+  width: 100%;
+}
+.form-reserve {
+  height: 100%;
+  width: 80%;
+}
+.formulaire {
+  margin-top: 2rem;
+}
+.formulaire-right .right {
+  flex: 2;
+}
+.formulaire-right .left p {
+  font-weight: 600;
+}
+
+.formulaire-left,
+.formulaire-right {
+  padding: 2rem;
+  margin: 0.5rem;
+}
+.reserve-title-head {
+  margin-bottom: 1rem;
+}

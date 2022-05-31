@@ -9,6 +9,9 @@
 @import url(mdb.css);
 @import url(book.css);
 @import url(gallery.css);
+@import url(reserver.css);
+@import url(logement.css);
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +51,9 @@ html {
     grid-template-columns: repeat(1, 1fr);
   }
   .modal-logement-details {
+    flex-direction: column;
+  }
+  .formulaire {
     flex-direction: column;
   }
   .footer .footerSection {
