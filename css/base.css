@@ -5,7 +5,7 @@
   font-family: "Open Sans", sans-serif;
 }
 .debug {
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 body {
   font-size: 100%;
